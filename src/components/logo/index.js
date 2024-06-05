@@ -1,13 +1,25 @@
 import React from 'react';
 import logo from '../../assets/logo.svg'; // Certifique-se de que o caminho está correto
-import './style.css'
+import styled from 'styled-components';
+
+
+const LogoContainer = styled.div `
+
+    display: flex;
+    font-size: 30px;
+`
+const LogoImg = styled.img `
+    margin-right: 10px;
+
+` 
+
 
 function Logo() {
     return (
-        <div className='logo'>
-            <img src={logo} alt='logo' className='logo-img'/>
+        <LogoContainer>
+            <LogoImg src={logo}/>
             <p><strong>Herculano</strong>Books</p>
-        </div>
+        </LogoContainer>
     );
 }
 
